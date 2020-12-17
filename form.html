@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PIX</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='form.css'>
+</head>
+<body>
+    <form id="pixForm">
+        <label for="valor">Valor:</label>
+        <input id="valor" type="text" name="valor">
+        <br/>
+        <label for="descricaoPix">Descrição:</label>
+        <input id="descricaoPix" type="text" name="descricaoPix">
+        <br/>
+        <label for="nossoNumero">Nosso Número:</label>
+        <input id="nossoNumero" type="text" name="nossoNumero">
+        <br/>
+    </form>
+    <iframe style="width: 100%;height: 550px;border: 0" src="."></iframe>
+    <script src='qrcode.js'></script>
+    <script src='crc16.js'></script>
+    <script src='pix.js'></script>
+    <script src='form.js'></script>
+</body>
+</html>

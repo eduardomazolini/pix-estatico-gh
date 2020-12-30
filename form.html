@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>PIX</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='form.css'>
+    <link rel="stylesheet" type="text/css" href="reset.css">
 </head>
+
 <body>
-    <form id="pixForm">
-        <label for="valor">Valor:</label>
-        <input id="valor" type="text" name="valor">
-        <br/>
-        <label for="descricaoPix">Descrição:</label>
-        <input id="descricaoPix" type="text" name="descricaoPix">
-        <br/>
-        <label for="nossoNumero">Nosso Número:</label>
-        <input id="nossoNumero" type="text" name="nossoNumero">
-        <br/>
-    </form>
-    <iframe style="width: 100%;height: 550px;border: 0" src="."></iframe>
+    <div class="sessao_formulario">
+        <h1 class="titulo">Formulário Pix</h1>
+        <hr>
+        <form id="pixForm">
+            <input id="valor" type="text" name="valor" placeholder="Digite o valor">
+            <br />
+            <input id="descricaoPix" type="text" name="descricaoPix" placeholder="Digite a Descrição">
+            <br />
+            <input id="nossoNumero" type="text" name="nossoNumero" placeholder="Nosso Número">
+            <br />
+        </form>
+    </div>
+
+    <div class="qr-code">
+        <iframe class="codigo" src="."></iframe>
+    </div>
     <script src='qrcode.js'></script>
     <script src='crc16.js'></script>
     <script src='pix.js'></script>
     <script src='form.js'></script>
 </body>
+
 </html>

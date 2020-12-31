@@ -1,0 +1,36 @@
+#pixForm {
+    background: rgb(0, 140, 255);
+    margin: 10% auto;
+    width: 30%;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+}
+#pixForm h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#pixForm label{
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+#pixForm input{
+    height: 25px;
+    width: 98%;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 2px solid rgb(226, 226, 226);
+}
+.especial {
+    margin: 0 auto;
+    width: 23%;
+}

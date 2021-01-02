@@ -69,10 +69,10 @@ window.onload = function() {
         qrcode.makeCode(qr);
         console.log(qr);
         qr64=btoa(qr);
-        document.getElementById('valor').innerHTML='<p>Valor: R$'+event.data.valor+'</p>'
-        document.getElementById('descricaoPix').innerHTML='<p>Informações Adicionais: '+event.data.descricaoPix.slice(0,33)+'</p>'
-        document.getElementById('nossoNumero').innerHTML='<p>ID: '+event.data.nossoNumero+'</p>'
-        document.getElementById('pixstr').innerHTML='<p>PIX: '+qr+'</p>'
+        document.getElementById('valor').innerHTML='<h2 style="text-transform: uppercase; font-family: 18px; font-weight: bold;">Valor:</h2><p>R$'+event.data.valor+'</p>'
+        document.getElementById('descricaoPix').innerHTML='<h2 style="text-transform: uppercase; font-family: 18px; font-weight: bold;">Informações Adicionais:</h2> <p>'+event.data.descricaoPix.slice(0,33)+'</p>'
+        document.getElementById('nossoNumero').innerHTML='<h2 style="text-transform: uppercase; font-family: 18px; font-weight: bold;">ID:</h2><p> '+event.data.nossoNumero+'</p>'
+        document.getElementById('pixstr').innerHTML='<h2 style="text-transform: uppercase; font-family: 18px; font-weight: bold;">PIX:</h2><p> '+qr+'</p>'
         document.getElementById('pixlink').innerHTML="<a target='_blank' href='https://pix.bcb.gov.br/qr/"+qr64+"'>https://pix.bcb.gov.br/qr/"+qr64+"</a>"
     });
 }

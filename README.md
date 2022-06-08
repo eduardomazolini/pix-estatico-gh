@@ -1,6 +1,16 @@
 # pix-estatico-gh
 Se vc precisa gerar um PIX com identificação para ajudar a consiliar o caixa mas não tem um grande sistema essa pode ser a solução
 
+## Edite o arquivo index.js
+
+```js
+chavePix = '52670cd7-c5f8-4346-890f-47407a3cda24'
+nomePix = 'JOSE EDUARDO CONSTANTINO MAZOLINI'
+cidadePix = 'SOCORRO'
+valorInicialPix = '5.00'
+DescricaoPix = 'Ref a pagamento da fatura 1234567'
+```
+
 ## index
 
 Exibe o QR Code na tela do caixa que estiver virada para o cliente.
